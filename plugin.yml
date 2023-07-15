@@ -3,3 +3,11 @@ api: 5.0.0
 version: 0.0.5
 main: frashkar\fexample\Main
 author: FRashkar-pm
+commands:
+  fexample:
+    description: "FExample Command"
+    usage: "/fexample"
+    permission: fexample.command
+permissions:
+  fexample.command:
+    default: true
