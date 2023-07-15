@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace frashkar\fexample;
 
+use frashkar\fexample\events\EventListener;
 use pocketmine\command\{Command, CommandSender};
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
@@ -16,6 +17,7 @@ class Main extends PluginBase
     protected function onEnable() : void
     {
         self::setInstance($this);
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool 
