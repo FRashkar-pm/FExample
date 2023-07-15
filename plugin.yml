@@ -1,0 +1,5 @@
+name: FExample
+api: 5.0.0
+version: 0.0.5
+main: frashkar\fexample\Main
+author: FRashkar-pm
